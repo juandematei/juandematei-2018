@@ -1,0 +1,24 @@
+{
+  "name": "juandematei",
+  "version": "1.0.0",
+  "description": "My website as web developer",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juandematei/juandematei-2018.git"
+  },
+  "keywords": [],
+  "author": "Juan Dematei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juandematei/juandematei-2018/issues"
+  },
+  "homepage": "https://github.com/juandematei/juandematei-2018#readme"
+}
