@@ -8,6 +8,9 @@
   margin: 0 auto;
   height: 100%; }
 
+section {
+  padding: 40px 0; }
+
 body {
   background-color: #fafafa;
   color: #212121;
@@ -71,6 +74,24 @@ nav {
       line-height: 70px; }
       nav .nav-bar .nav-link:hover {
         color: #009999; }
+
+.portfolio-item {
+  width: 25%;
+  height: 400px;
+  display: inline-block;
+  margin: 0;
+  list-style: none;
+  background-size: cover;
+  background-position: top;
+  transition: all 0.5s ease-in-out; }
+  .portfolio-item.item-1 {
+    background-image: url(../img/screencapture-antonellimakeup.png); }
+  .portfolio-item.item-2 {
+    background-image: url(../img/screencapture-halrefrigeracion.png); }
+  .portfolio-item.item-3 {
+    background-image: url(../img/screencapture-tiendawls.png); }
+  .portfolio-item.item-4 {
+    background-image: url(../img/screencapture-luduenaabogados.png); }
 
 footer {
   background: #212121;
