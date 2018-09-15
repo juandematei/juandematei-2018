@@ -1,7 +1,5 @@
 @import 'config';
 
-
-
 .container {
     width: 1140px;
     margin: 0 auto;
@@ -17,9 +15,42 @@ body {
 header {
     background-image: url(../img/juan.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center -300px;
     background-repeat: no-repeat;
     height: 100vh;
+
+    .title-box {
+        background-color: rgba($custom-white, 0.8);
+        padding: 40px;
+        position: relative;
+        top: 200px;
+        left: 50px;
+        width: 40%;
+        border-radius: 10px;
+        // Shadow
+        -webkit-box-shadow: 0px 30px 80px -15px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 30px 80px -15px rgba(0,0,0,0.75);
+        box-shadow: 0px 30px 80px -15px rgba(0,0,0,0.75);
+
+        &:after {
+            content: '';
+            background-image: url(../img/chevron.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 160px;
+            height: 40px;
+            display: block;
+            position: relative;
+            right: -150px;
+            top: -20px;
+            float: right;
+        }
+
+        em {
+            color: $secondary-color;
+            font-style: normal;
+        }
+    }
 }
 
 nav {
@@ -48,14 +79,45 @@ nav {
 
         .nav-link {
             text-decoration: none;
+            text-transform: uppercase;
             color: $custom-black;
             font-family: $secondary-font;
             font-size: 1.1rem;
-            font-weight: 500;
+            //font-weight: 500;
             line-height: 70px;
 
             &:hover {
                 color: $primary-color;
+            }
+        }
+    }
+}
+
+footer {
+    background: $custom-black;
+    color: $custom-white;
+    min-height: 50px;
+
+    .copyright {
+        i {
+            color: red;
+        }
+    }
+
+    .social {
+        float: right;
+        list-style: none;
+
+        .social-item {
+            display: inline;
+            
+            .social-link {
+                text-decoration: none;
+                color: $custom-white;
+    
+                &:hover {
+                    color: $primary-color;
+                }
             }
         }
     }
