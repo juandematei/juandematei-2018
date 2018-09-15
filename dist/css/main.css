@@ -1,16 +1,47 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
   box-sizing: border-box; }
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  height: 100%; }
 
 body {
   background-color: #fafafa;
-  color: #222222; }
+  color: #212121;
+  font-family: "Montserrat", sans-serif; }
 
 header {
   background-image: url(../img/juan.jpg);
   background-size: cover;
-  background-position: center bottom;
+  background-position: center;
   background-repeat: no-repeat;
   height: 100vh; }
+
+nav {
+  background: rgba(250, 250, 250, 0.8);
+  height: 70px; }
+  nav .branding {
+    float: left;
+    height: 100%; }
+    nav .branding .branding-logo {
+      max-height: 100%; }
+  nav .nav-bar {
+    float: right;
+    height: 100%;
+    list-style: none; }
+    nav .nav-bar .nav-item {
+      display: inline-block;
+      height: 100%;
+      margin-left: 20px; }
+    nav .nav-bar .nav-link {
+      text-decoration: none;
+      color: #212121;
+      font-family: "Raleway", sans-serif;
+      font-size: 1.1rem;
+      font-weight: 500;
+      line-height: 70px; }
+      nav .nav-bar .nav-link:hover {
+        color: #009999; }
