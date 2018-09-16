@@ -6,7 +6,8 @@
 html, body {
   background-color: #e1dfe9;
   color: #212121;
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300; }
 
 main {
   margin-bottom: 200px; }
@@ -45,6 +46,27 @@ header {
       right: -150px;
       top: -20px;
       float: right; }
+    header .title-box h1 {
+      font-family: "Dosis", sans-serif;
+      font-size: 2.4em;
+      font-weight: 500;
+      text-transform: uppercase; }
+    header .title-box h3 {
+      font-family: "Dosis", sans-serif;
+      font-weight: 500;
+      text-transform: uppercase; }
+
+@keyframes typing {
+  from {
+    width: 0%; }
+  to {
+    width: 100%; } }
+
+@keyframes blink {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: orange; } }
     header .title-box em {
       color: #663399;
       font-style: normal; }
@@ -72,22 +94,34 @@ nav {
       text-decoration: none;
       text-transform: uppercase;
       color: #212121;
-      font-family: "Raleway", sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-size: 0.9rem;
-      font-weight: 600;
+      font-weight: 700;
       line-height: 70px; }
       nav .nav-bar .nav-link:hover {
         color: #009999;
         transition: all 0.2s ease-in-out; }
 
 section {
-  padding: 120px 0; }
+  padding: 60px 0; }
   section:nth-child(odd) {
     background: #ffffff; }
   section h2 {
+    background: -webkit-linear-gradient(-45deg, #009999, #663399);
+    background-clip: unset;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
     text-transform: uppercase;
-    font-size: 2.6rem; }
+    font-family: "Dosis", sans-serif;
+    font-size: 5rem;
+    font-weight: 500; }
+  section h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Dosis", sans-serif;
+    font-size: 2rem;
+    font-weight: 200; }
 
 .portfolio-grid {
   width: 100%;
@@ -103,9 +137,49 @@ section {
     overflow: hidden; }
     .portfolio-grid .portfolio-item img {
       max-width: 100%;
+      transform: scale(1.2);
       transition: all 0.2s ease-in-out; }
     .portfolio-grid .portfolio-item:hover img {
-      transform: scale(1.2); }
+      transform: scale(1);
+      filter: blur(2px); }
+    .portfolio-grid .portfolio-item .portfolio-item-overlay {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: stretch;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      padding: 15px;
+      opacity: 0;
+      transition: all 0.2s ease-in-out; }
+      .portfolio-grid .portfolio-item .portfolio-item-overlay:hover {
+        opacity: 1;
+        background-color: rgba(33, 33, 33, 0.6); }
+      .portfolio-grid .portfolio-item .portfolio-item-overlay span {
+        color: #fafafa;
+        text-align: center;
+        text-shadow: 0px 2px 15px black; }
+      .portfolio-grid .portfolio-item .portfolio-item-overlay .portfolio-item-title {
+        font-family: "Dosis", sans-serif;
+        font-weight: 500;
+        font-size: 1.2rem;
+        text-transform: uppercase; }
+      .portfolio-grid .portfolio-item .portfolio-item-overlay .portfolio-item-description {
+        font-size: 1rem; }
+      .portfolio-grid .portfolio-item .portfolio-item-overlay .portfolio-item-links {
+        font-size: 0.8rem;
+        margin-top: 20px; }
+        .portfolio-grid .portfolio-item .portfolio-item-overlay .portfolio-item-links a {
+          text-decoration: none;
+          color: #fafafa;
+          margin: 0 6px; }
 
 footer {
   background: #212121;
