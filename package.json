@@ -4,7 +4,8 @@
   "description": "My website as web developer",
   "main": "index.js",
   "dependencies": {
-    "node-sass": "^4.9.3"
+    "node-sass": "^4.9.3",
+    "normalize.css": "^8.0.0"
   },
   "devDependencies": {},
   "scripts": {

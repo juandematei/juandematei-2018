@@ -10,21 +10,23 @@
     <!--TODO:--><meta name="description" content=""/>
 
     <!--STYLES-->
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600|Raleway">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600 | Raleway">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="animated slideInDown">
             <div class="container">
                 <div class="branding">
-                    <img class="branding-logo" src="img/logo.png" alt="logo">
+                    <a href="index.html"><img class="branding-logo" src="img/logo.png" alt="logo"></a>
                 </div>
                 <ul class="nav-bar">
-                    <li class="nav-item"><a href="#" class="nav-link">Sobre mí</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Trabajos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><i class="fab fa-telegram-plane"></i> Contacto</a></li>
+                    <li class="nav-item"><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                    <li class="nav-item"><a href="#trabajos" class="nav-link">Trabajos</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link"><i class="far fa-envelope"></i> Contacto</a></li>
                 </ul>
             </div>
         </nav>
@@ -34,30 +36,55 @@
         </div>
     </header>
     <main>
-        <section id="sobre-mi"></section>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+        </section>
         <section id="trabajos">
-
-                <ul class="portfolio">
-                    <li class="portfolio-item item-1"></li>
-                    <li class="portfolio-item item-2"></li>
-                    <li class="portfolio-item item-3"></li>
-                    <li class="portfolio-item item-4"></li>
-                </ul>
-            
+            <h2>Trabajos</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="img/portfolio/portfolio-placeholder.jpg" alt="">
+                </div>
+                <div class="portfolio-item">
+                    <img src="img/portfolio/portfolio-placeholder.jpg" alt="">
+                </div>
+                <div class="portfolio-item">
+                    <img src="img/portfolio/portfolio-placeholder.jpg" alt="">
+                </div>
+                <div class="portfolio-item">
+                    <img src="img/portfolio/portfolio-placeholder.jpg" alt="">
+                </div>
+                <div class="portfolio-item">
+                    <img src="img/portfolio/portfolio-placeholder.jpg" alt="">
+                </div>
+                <div class="portfolio-item">
+                    <img src="img/portfolio/portfolio-placeholder.jpg" alt="">
+                </div>
+                <div class="portfolio-item">
+                    <img src="img/portfolio/portfolio-placeholder.jpg" alt="">
+                </div>
+            </div>
         </section>
     </main>
     <footer>
         <div class="container">
-            <div class="copyright">
-                Hecho con <i class="fas fa-code"></i> por mí.
+            <div class="footer-content">
+                <div class="copyright">
+                    Creado con 
+                    <span class="fa-stack">
+                        <i class="fas fa-heart fa-stack-2x"></i>
+                        <i class="fas fa-code fa-stack-1x fa-inverse"></i>
+                    </span>
+                    por mí.
+                </div>
+                <ul class="social">
+                    <a href="#" class="social-link"><li class="social-item"><i class="fab fa-instagram"></i></li></a>
+                    <a href="#" class="social-link"><li class="social-item"><i class="fab fa-facebook-f"></i></li></a>
+                    <a href="#" class="social-link"><li class="social-item"><i class="fab fa-twitter"></i></li></a>
+                    <a href="#" class="social-link"><li class="social-item"><i class="fab fa-github-alt"></i></li></a>
+                    <a href="#" class="social-link"><li class="social-item"><i class="fab fa-linkedin-in"></i></li></a>
+                </ul>
             </div>
-            <ul class="social">
-                <li class="social-item"><a href="#" class="social-link"><i class="fab fa-instagram"></i></a></li>
-                <li class="social-item"><a href="#" class="social-link"><i class="fab fa-facebook"></i></a></li>
-                <li class="social-item"><a href="#" class="social-link"><i class="fab fa-twitter"></i></a></li>
-                <li class="social-item"><a href="#" class="social-link"><i class="fab fa-github"></i></a></li>
-                <li class="social-item"><a href="#" class="social-link"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
         </div>
     </footer>
 </body>

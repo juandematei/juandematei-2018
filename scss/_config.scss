@@ -15,3 +15,14 @@ $secondary-color: #663399;
 // Fonts
 $primary-font:   'Montserrat', sans-serif;
 $secondary-font: 'Raleway', sans-serif;
+
+// Mixins
+@mixin shadow {
+    -webkit-box-shadow: 0px 30px 80px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 30px 80px -15px rgba(0,0,0,0.75);
+    box-shadow: 0px 30px 80px -15px rgba(0,0,0,0.75);
+} 
+
+@mixin ease {
+    transition: all 0.2s ease-in-out;
+}
