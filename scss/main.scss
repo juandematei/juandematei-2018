@@ -4,7 +4,7 @@ html, body {
     background-color: #e1dfe9;
     color: color(black);
     font-family: $primary-font;
-    font-weight: 300;
+    font-weight: $regular;
 }
 
 main {
@@ -34,6 +34,9 @@ header {
         width: 40%;
         border-radius: 10px;
         @include shadow;
+        font-family: $secondary-font;
+        font-weight: $bold;
+        text-transform: uppercase;
 
         &:after {
             content: '';
@@ -50,39 +53,11 @@ header {
         }
 
         h1 {
-            font-family: $secondary-font;
             font-size: 2.4em;
-            font-weight: 500;
-            text-transform: uppercase;
-            //overflow: hidden;
-            //white-space: nowrap;
-            //animation: typing 5s steps(30, end), blink .75s step-end infinite;
-            //border-right: 4px solid orange;
         }
 
         h3 {
-            font-family: $secondary-font;
-            //font-size: 2.4em;
-            font-weight: 500;
-            text-transform: uppercase;
-        }
-
-        @keyframes typing {
-            from { 
-                width: 0% 
-            }
-            to { 
-                width: 100% 
-            }
-        }
-
-        @keyframes blink {
-            from, to { 
-                border-color: transparent 
-            }
-            50% { 
-                border-color: orange; 
-            }
+            font-size: 1.6em;
         }
 
         em {
@@ -126,7 +101,7 @@ nav {
             color: color(black);
             font-family: $primary-font;
             font-size: 0.9em;
-            font-weight: 700;
+            font-weight: $bolder;
             line-height: 70px;
 
             &:hover {
@@ -145,24 +120,24 @@ section {
         background: #ffffff;
     }
 
+    h2, h3 {
+        font-family: $secondary-font;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
     h2 {
         background: -webkit-linear-gradient(-45deg, color(primary), color(accent));
         background-clip: unset;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        text-align: center;
-        text-transform: uppercase;
-        font-family: $secondary-font;
         font-size: 5em;
-        font-weight: 500;
+        font-weight: $bold;
     }
 
     h3 {
-        text-align: center;
-        text-transform: uppercase;
-        font-family: $secondary-font;
         font-size: 2em;
-        font-weight: 200;
+        font-weight: $light;
     }
 
 }
@@ -233,7 +208,7 @@ section {
 
             .portfolio-item-title {
                 font-family: $secondary-font;
-                font-weight: 500;
+                font-weight: $bold;
                 font-size: 1.2em;
                 text-transform: uppercase;
             }

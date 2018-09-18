@@ -19,8 +19,15 @@ $colors: (
 
 
 // Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700|Dosis:200,500');
+
 $primary-font:   'Montserrat', sans-serif;
 $secondary-font: 'Dosis', sans-serif;
+
+$light:   200;
+$regular: 300;
+$bold:    500;
+$bolder:  700;
 
 // Mixins
 @mixin shadow {
