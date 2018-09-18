@@ -6,11 +6,17 @@
 }
 
 // Colors
-$custom-white:    #fafafa;
-$custom-black:    #212121;
+$colors: (
+    primary: #009999,
+    accent:  #663399,
+    white:   #fafafa,
+    black:   #212121
+);
 
-$primary-color:   #009999;
-$secondary-color: #663399;
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+};
+
 
 // Fonts
 $primary-font:   'Montserrat', sans-serif;
@@ -18,8 +24,6 @@ $secondary-font: 'Dosis', sans-serif;
 
 // Mixins
 @mixin shadow {
-    -webkit-box-shadow: 0px 30px 80px -15px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 30px 80px -15px rgba(0,0,0,0.75);
     box-shadow: 0px 30px 80px -15px rgba(0,0,0,0.75);
 } 
 
