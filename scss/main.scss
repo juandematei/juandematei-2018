@@ -1,7 +1,7 @@
 @import 'config';
 
 html, body {
-    background-color: #e1dfe9;
+    background-color: color(white);
     color: color(black);
     font-family: $primary-font;
     font-weight: $regular;
@@ -114,16 +114,23 @@ nav {
 
 // Sections
 section {
-    padding: 60px 0;
-    
-    &:nth-child(odd) {
-        background: #ffffff;
+    padding: 80px 0;
+
+    &#contacto {
+        background: -webkit-linear-gradient(-45deg, color(primary), color(accent));
     }
 
     h2, h3 {
         font-family: $secondary-font;
         text-align: center;
         text-transform: uppercase;
+
+        &.contact {
+            background: color(white);
+            background-clip: unset;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
 
     h2 {
@@ -139,8 +146,8 @@ section {
         font-size: 2em;
         font-weight: $light;
     }
-
 }
+
 
 // Portfolio
 .portfolio-grid {
@@ -158,11 +165,12 @@ section {
         overflow: hidden;
         border-radius: 10px;
         cursor: pointer;
+        box-shadow: 0px 10px 40px -15px rgba(0,0,0,0.75);
         
         &:hover {
             @include shadow;
             @include ease;
-            transform: translateY(-5px);
+            //transform: translateY(-5px);
         }
 
         img {
@@ -228,6 +236,24 @@ section {
                 }
             }
         }
+    }
+}
+
+// Contact
+.contact-grid {
+    width: 100%;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    justify-content: center;
+
+    .contact-item {
+        border: 5px solid #fafafa;
+        border-radius: 10px;
+        padding: 20px;
+        color: color(white);
     }
 }
 
