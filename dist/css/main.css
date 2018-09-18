@@ -93,7 +93,7 @@ nav {
       text-transform: uppercase;
       color: #212121;
       font-family: "Montserrat", sans-serif;
-      font-size: 0.9rem;
+      font-size: 0.9em;
       font-weight: 700;
       line-height: 70px; }
       nav .nav-bar .nav-link:hover {
@@ -112,13 +112,13 @@ section {
     text-align: center;
     text-transform: uppercase;
     font-family: "Dosis", sans-serif;
-    font-size: 5rem;
+    font-size: 5em;
     font-weight: 500; }
   section h3 {
     text-align: center;
     text-transform: uppercase;
     font-family: "Dosis", sans-serif;
-    font-size: 2rem;
+    font-size: 2em;
     font-weight: 200; }
 
 .portfolio-grid {
@@ -173,12 +173,12 @@ section {
       .portfolio-grid .portfolio-item .portfolio-item-overlay .portfolio-item-title {
         font-family: "Dosis", sans-serif;
         font-weight: 500;
-        font-size: 1.2rem;
+        font-size: 1.2em;
         text-transform: uppercase; }
       .portfolio-grid .portfolio-item .portfolio-item-overlay .portfolio-item-description {
-        font-size: 1rem; }
+        font-size: 1em; }
       .portfolio-grid .portfolio-item .portfolio-item-overlay .portfolio-item-links {
-        font-size: 0.8rem;
+        font-size: 0.8em;
         margin-top: 20px; }
         .portfolio-grid .portfolio-item .portfolio-item-overlay .portfolio-item-links a {
           text-decoration: none;
@@ -206,7 +206,7 @@ footer {
       color: #c62828; }
     footer .footer-content .copyright i.fa-code {
       color: #fafafa;
-      font-size: 0.8rem;
+      font-size: 0.8em;
       transform: rotateZ(2deg); }
     footer .footer-content .social {
       list-style: none; }
