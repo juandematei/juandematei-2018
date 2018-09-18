@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "description": "My website as web developer",
   "main": "index.js",
+  "homepage": "https://juandematei.github.io/juandematei-2018/",
   "dependencies": {
+    "gh-pages": "^2.0.0",
     "node-sass": "^4.9.3",
     "normalize.css": "^8.0.0"
   },
   "devDependencies": {},
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -20,6 +23,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/juandematei/juandematei-2018/issues"
-  },
-  "homepage": "https://github.com/juandematei/juandematei-2018#readme"
+  }
 }
