@@ -240,21 +240,64 @@ section {
 }
 
 // Contact
-.contact-grid {
-    width: 100%;
-    padding: 40px 20px;
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-    justify-content: center;
+#contacto {
+    .grid {
+        width: 100%;
+        padding: 40px 20px;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        justify-content: center;
 
-    a.contact-item {
+        .card-container {
+            cursor: pointer;
+            height: 150px;
+            perspective: 600;
+            position: relative;
+            width: 100%;
+
+            .card {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                transform-style: preserve-3d;
+                @include ease;
+                border: 3px solid color(white);
+                border-radius: 10px;
+                background: rgba(color(white), 0.5);
+    
+                &:hover {
+                    transform: rotateX(180deg);
+                    background: rgba(color(white), 1);
+                }
+            }
+
+            .card .side {
+                backface-visibility: hidden;
+                height: 100%;
+                position: absolute;
+                overflow: hidden;
+                width: 100%;
+            }
+
+            .card .back {
+                transform: rotateX(180deg);
+            }
+        }
+    }
+}
+
+    
+
+    .contact-item {
         border: 5px solid #fafafa;
         border-radius: 10px;
         padding: 1em;
         color: color(white);
         text-decoration: none;
+        position: relative;
+        perspective: 600;
 
         span {
             font-size: 1.4em;
@@ -268,7 +311,6 @@ section {
             vertical-align: middle;
         }
     }
-}
 
 // Footer 
 footer {
