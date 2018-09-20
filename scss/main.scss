@@ -19,9 +19,9 @@ main {
 
 // Header
 header {
-    background-image: url(../img/juan.jpg);
-    background-size: cover;
-    background-position: center -300px;
+    background-image: url(../img/juan.png);
+    background-size: 55%;
+    background-position: right bottom;
     background-repeat: no-repeat;
     height: 100vh;
 
@@ -103,10 +103,10 @@ nav {
             font-size: 0.9em;
             font-weight: $bolder;
             line-height: 70px;
+            @include ease;
 
             &:hover {
                 color: color(primary);
-                @include ease;
             }
         }
     }
@@ -240,22 +240,85 @@ section {
 }
 
 // Contact
-.contact-grid {
-    width: 100%;
-    padding: 40px 20px;
-    display: grid;
-    grid-template-columns: 30% 30% 30%;
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-    justify-content: center;
+#contacto {
+    .grid {
+        width: 100%;
+        padding: 40px 20px;
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        justify-content: center;
+
+        .card-container {
+            cursor: pointer;
+            height: 150px;
+            perspective: 600;
+            position: relative;
+            width: 100%;
+
+            .card {
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                transform-style: preserve-3d;
+                @include ease;
+                border-radius: 10px;
+                background: rgba(color(white), 0.5);
+                color: color(white);
+    
+                &:hover {
+                    transform: rotateX(180deg);
+                    background: rgba(color(white), 1);
+                    color: color(black);
+                    font-weight: $bolder;
+                }
+            }
+
+            .card .side {
+                backface-visibility: hidden;
+                height: 100%;
+                position: absolute;
+                overflow: hidden;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+                align-content: stretch;
+            }
+
+            .card .back {
+                transform: rotateX(180deg);
+            }
+        }
+    }
+}
+
+    
 
     .contact-item {
         border: 5px solid #fafafa;
         border-radius: 10px;
-        padding: 20px;
+        padding: 1em;
         color: color(white);
+        text-decoration: none;
+        position: relative;
+        perspective: 600;
+
+        span {
+            font-size: 1.4em;
+            vertical-align: middle;
+            font-weight: $bolder;
+        }
+
+        i {
+            margin-right: 0.4em;
+            font-size: 2em;
+            vertical-align: middle;
+        }
     }
-}
 
 // Footer 
 footer {
@@ -311,10 +374,10 @@ footer {
                 line-height: 50px;
                 text-align: center;
                 font-size: 24px;
+                @include ease;
 
                 &:hover {
                     background: color(white);
-                    @include ease;
                 }
             }
         }

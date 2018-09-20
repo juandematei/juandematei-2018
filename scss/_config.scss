@@ -19,12 +19,12 @@ $colors: (
 
 
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700|Dosis:200,500');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700|Dosis:300,500');
 
 $primary-font:   'Montserrat', sans-serif;
 $secondary-font: 'Dosis', sans-serif;
 
-$light:   200;
+$light:   300;
 $regular: 300;
 $bold:    500;
 $bolder:  700;
@@ -35,5 +35,5 @@ $bolder:  700;
 } 
 
 @mixin ease {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
