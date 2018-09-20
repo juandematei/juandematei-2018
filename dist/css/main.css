@@ -19,9 +19,9 @@ main {
   height: 100%; }
 
 header {
-  background-image: url(../img/juan.jpg);
-  background-size: cover;
-  background-position: center -300px;
+  background-image: url(../img/juan.png);
+  background-size: 55%;
+  background-position: right bottom;
   background-repeat: no-repeat;
   height: 100vh; }
   header .title-box {
