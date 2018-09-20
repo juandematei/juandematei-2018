@@ -103,10 +103,10 @@ nav {
             font-size: 0.9em;
             font-weight: $bolder;
             line-height: 70px;
+            @include ease;
 
             &:hover {
                 color: color(primary);
-                @include ease;
             }
         }
     }
@@ -263,13 +263,15 @@ section {
                 position: absolute;
                 transform-style: preserve-3d;
                 @include ease;
-                border: 3px solid color(white);
                 border-radius: 10px;
                 background: rgba(color(white), 0.5);
+                color: color(white);
     
                 &:hover {
                     transform: rotateX(180deg);
                     background: rgba(color(white), 1);
+                    color: color(black);
+                    font-weight: $bolder;
                 }
             }
 
@@ -279,6 +281,12 @@ section {
                 position: absolute;
                 overflow: hidden;
                 width: 100%;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                justify-content: center;
+                align-items: center;
+                align-content: stretch;
             }
 
             .card .back {
@@ -366,10 +374,10 @@ footer {
                 line-height: 50px;
                 text-align: center;
                 font-size: 24px;
+                @include ease;
 
                 &:hover {
                     background: color(white);
-                    @include ease;
                 }
             }
         }

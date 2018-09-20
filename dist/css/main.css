@@ -82,10 +82,10 @@ nav {
       font-family: "Montserrat", sans-serif;
       font-size: 0.9em;
       font-weight: 700;
-      line-height: 70px; }
+      line-height: 70px;
+      transition: all 0.3s ease-in-out; }
       nav .nav-bar .nav-link:hover {
-        color: #009999;
-        transition: all 0.2s ease-in-out; }
+        color: #009999; }
 
 section {
   padding: 80px 0; }
@@ -128,11 +128,11 @@ section {
     box-shadow: 0px 10px 40px -15px rgba(0, 0, 0, 0.75); }
     .portfolio-grid .portfolio-item:hover {
       box-shadow: 0px 30px 80px -15px rgba(0, 0, 0, 0.75);
-      transition: all 0.2s ease-in-out; }
+      transition: all 0.3s ease-in-out; }
     .portfolio-grid .portfolio-item img {
       max-width: 100%;
       transform: scale(1.2);
-      transition: all 0.2s ease-in-out; }
+      transition: all 0.3s ease-in-out; }
     .portfolio-grid .portfolio-item:hover img {
       transform: scale(1.1);
       filter: blur(2px); }
@@ -152,7 +152,7 @@ section {
       width: 100%;
       padding: 15px;
       opacity: 0;
-      transition: all 0.2s ease-in-out; }
+      transition: all 0.3s ease-in-out; }
       .portfolio-grid .portfolio-item .portfolio-item-overlay:hover {
         opacity: 1;
         background-color: rgba(33, 33, 33, 0.6); }
@@ -194,19 +194,27 @@ section {
       width: 100%;
       position: absolute;
       transform-style: preserve-3d;
-      transition: all 0.2s ease-in-out;
-      border: 3px solid #fafafa;
+      transition: all 0.3s ease-in-out;
       border-radius: 10px;
-      background: rgba(250, 250, 250, 0.5); }
+      background: rgba(250, 250, 250, 0.5);
+      color: #fafafa; }
       #contacto .grid .card-container .card:hover {
         transform: rotateX(180deg);
-        background: #fafafa; }
+        background: #fafafa;
+        color: #212121;
+        font-weight: 700; }
     #contacto .grid .card-container .card .side {
       backface-visibility: hidden;
       height: 100%;
       position: absolute;
       overflow: hidden;
-      width: 100%; }
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: stretch; }
     #contacto .grid .card-container .card .back {
       transform: rotateX(180deg); }
 
@@ -265,7 +273,7 @@ footer {
         border-radius: 50%;
         line-height: 50px;
         text-align: center;
-        font-size: 24px; }
+        font-size: 24px;
+        transition: all 0.3s ease-in-out; }
         footer .footer-content .social .social-item:hover {
-          background: #fafafa;
-          transition: all 0.2s ease-in-out; }
+          background: #fafafa; }
