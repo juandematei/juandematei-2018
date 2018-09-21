@@ -19,6 +19,7 @@ main {
 
 // Header
 header {
+    background-color: #D5DFEA;
     background-image: url(../img/juan.png);
     background-size: 55%;
     background-position: right bottom;
@@ -37,10 +38,11 @@ header {
         font-family: $secondary-font;
         font-weight: $bold;
         text-transform: uppercase;
+        animation: float 6s ease-in-out infinite;
 
         &:after {
             content: '';
-            background-image: url(../img/chevron.png);
+            background-image: url(../img/chevron.svg);
             background-size: contain;
             background-repeat: no-repeat;
             width: 160px;
@@ -50,6 +52,32 @@ header {
             right: -150px;
             top: -20px;
             float: right;
+            animation: float-after 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(-10px)
+            }
+            50% {
+                transform: translateY(0px);
+                box-shadow: 0px -10px 80px -15px rgba(0,0,0,0.75);
+            }
+            100% {
+                transform: translateY(-10px)
+            }
+        }
+
+        @keyframes float-after {
+            0% {
+                transform: translateY(0px)
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0px)
+            }
         }
 
         h1 {
@@ -263,6 +291,7 @@ section {
                 position: absolute;
                 transform-style: preserve-3d;
                 @include ease;
+                //transition-delay: 0.1s;
                 border-radius: 10px;
                 background: rgba(color(white), 0.5);
                 color: color(white);
