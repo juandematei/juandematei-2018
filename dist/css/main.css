@@ -4,7 +4,8 @@
   padding: 0;
   box-sizing: border-box; }
 
-html, body {
+html,
+body {
   background-color: #fafafa;
   color: #212121;
   font-family: "Montserrat", sans-serif;
@@ -110,18 +111,20 @@ nav {
 section {
   padding: 80px 0; }
   section#contacto {
-    background: -webkit-linear-gradient(-45deg, #009999, #663399); }
-  section h2, section h3 {
+    background: linear-gradient(-45deg, #009999, #663399); }
+  section h2,
+  section h3 {
     font-family: "Dosis", sans-serif;
     text-align: center;
     text-transform: uppercase; }
-    section h2.contact, section h3.contact {
+    section h2.contact,
+    section h3.contact {
       background: #fafafa;
       background-clip: unset;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
   section h2 {
-    background: -webkit-linear-gradient(-45deg, #009999, #663399);
+    background: linear-gradient(-45deg, #009999, #663399);
     background-clip: unset;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -175,7 +178,7 @@ section {
       transition: all 0.3s ease-in-out; }
       .portfolio-grid .portfolio-item .portfolio-item-overlay:hover {
         opacity: 1;
-        background-color: rgba(33, 33, 33, 0.6); }
+        background: linear-gradient(rgba(33, 33, 33, 0.2), rgba(33, 33, 33, 0.8)); }
       .portfolio-grid .portfolio-item .portfolio-item-overlay span {
         color: #fafafa;
         text-align: center;
