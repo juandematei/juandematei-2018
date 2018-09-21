@@ -1,8 +1,20 @@
-function showMenu() {
-    var x = document.getElementsByClassName("nav-item");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
+// Select DOM elements
+const menuBtn = document.querySelector('.menu-btn');
+const menu = document.querySelector('.menu');
+
+// Menu initial state
+let showMenu = false;
+
+menuBtn.addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+  if (!showMenu) {
+    menu.classList.add('show');
+
+    showMenu = true;
+  } else {
+    menu.classList.remove('show');
+
+    showMenu = false;
+  }
 }
