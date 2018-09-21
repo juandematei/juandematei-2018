@@ -14,6 +14,8 @@
         gtag('config', 'UA-10440680-19');
     </script>
 
+    <script src="js/app.js"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -36,148 +38,140 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <nav class="animated slideInDown">
-            <div class="container">
-                <div class="branding">
-                    <a href="index.html"><img class="branding-logo" src="img/logo.png" alt="logo"></a>
-                </div>
-                <ul class="nav-bar">
-                    <li class="nav-item"><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
-                    <li class="nav-item"><a href="#trabajos" class="nav-link">Trabajos</a></li>
-                    <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
-                </ul>
+    <nav class="animated slideInDown">
+        <div class="container">
+            <div class="branding">
+                <a href="index.html"><img class="branding-logo" src="img/logo.png" alt="logo"></a>
             </div>
-        </nav>
-        <div class="title-box animated slideInUp">
-            <h1>Hola! Me llamo <em>Juan</em>,</h1>
-            <h3>soy diseñador y programador web.</h3>
+            <ul class="nav-bar">
+                <li class="nav-item"><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                <li class="nav-item"><a href="#trabajos" class="nav-link">Trabajos</a></li>
+                <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <a class="nav-btn" href="javascript:void(0);" onclick="showMenu()"><i class="fas fa-ellipsis-v fa-lg"></i></a>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <div class="title-box animated slideInUp">
+                <h1>Hola! Me llamo <em>Juan</em>,</h1>
+                <h3>soy diseñador y programador web.</h3>
+            </div>
         </div>
     </header>
     <main>
         <section id="sobre-mi">
-            <h2>Sobre mí</h2>
+            <div class="container">
+                <h2>Sobre mí</h2>
+            </div>
         </section>
         <section id="trabajos">
-            <h2>Trabajos</h2>
-            <h3>Estos son algunos de los sitios web que hice.</h3>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="img/portfolio/portfolio-item-img-1.jpg" alt="HAL Refrigeración">
-                    <div class="portfolio-item-overlay">
-                        <span class="portfolio-item-title">HAL Refrigeración</span>
-                        <span class="portfolio-item-description">Sitio web, logo y redes sociales.</span>
-                        <span class="portfolio-item-links">
-                            <!-- <a href="#" class="link"><i class="fab fa-github"></i> Ver en GitHub</a> -->
-                            <a href="https://www.halrefrigeracion.com/" class="link"><i class="fas fa-link"></i> Visitar web</a>
-                        </span>
+            <div class="container">
+                <h2>Trabajos</h2>
+                <h3>Estos son algunos de los sitios web que hice.</h3>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="img/portfolio/portfolio-item-img-1.jpg" alt="HAL Refrigeración">
+                        <div class="portfolio-item-overlay">
+                            <span class="portfolio-item-title">HAL Refrigeración</span>
+                            <span class="portfolio-item-description">Sitio web, logo y redes sociales.</span>
+                            <span class="portfolio-item-links">
+                                <!-- <a href="#" class="link"><i class="fab fa-github"></i> Ver en GitHub</a> -->
+                                <a href="https://www.halrefrigeracion.com/" class="link"><i class="fas fa-link"></i> Visitar web</a>
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="img/portfolio/portfolio-item-img-2.jpg" alt="Antonelli Makeup">
-                    <div class="portfolio-item-overlay">
-                        <span class="portfolio-item-title">Antonelli Makeup</span>
-                        <span class="portfolio-item-description">Sitio web y logo.</span>
-                        <span class="portfolio-item-links">
-                            <a href="https://www.github.com/juandematei/antonelli-makeup" class="link"><i class="fab fa-github"></i> Ver en GitHub</a>
-                            <a href="https://www.antonellimakeup.com/" class="link"><i class="fas fa-link"></i> Visitar web</a>
-                        </span>
+                    <div class="portfolio-item">
+                        <img src="img/portfolio/portfolio-item-img-2.jpg" alt="Antonelli Makeup">
+                        <div class="portfolio-item-overlay">
+                            <span class="portfolio-item-title">Antonelli Makeup</span>
+                            <span class="portfolio-item-description">Sitio web y logo.</span>
+                            <span class="portfolio-item-links">
+                                <a href="https://www.github.com/juandematei/antonelli-makeup" class="link"><i class="fab fa-github"></i> Ver en GitHub</a>
+                                <a href="https://www.antonellimakeup.com/" class="link"><i class="fas fa-link"></i> Visitar web</a>
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="img/portfolio/portfolio-item-img-3.jpg" alt="Ludueña Abogados">
-                    <div class="portfolio-item-overlay">
-                        <span class="portfolio-item-title">Ludueña Abogados</span>
-                        <span class="portfolio-item-description">Sitio web y logo.</span>
-                        <span class="portfolio-item-links">
-                            <!-- <a href="#" class="link"><i class="fab fa-github"></i> Ver en GitHub</a> -->
-                            <a href="https://www.xn--ludueaabogados-unb.com.ar/" class="link"><i class="fas fa-link"></i> Visitar web</a>
-                        </span>
+                    <div class="portfolio-item">
+                        <img src="img/portfolio/portfolio-item-img-3.jpg" alt="Ludueña Abogados">
+                        <div class="portfolio-item-overlay">
+                            <span class="portfolio-item-title">Ludueña Abogados</span>
+                            <span class="portfolio-item-description">Sitio web y logo.</span>
+                            <span class="portfolio-item-links">
+                                <!-- <a href="#" class="link"><i class="fab fa-github"></i> Ver en GitHub</a> -->
+                                <a href="https://www.xn--ludueaabogados-unb.com.ar/" class="link"><i class="fas fa-link"></i> Visitar web</a>
+                            </span>
+                        </div>
                     </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="img/portfolio/portfolio-item-img-4.jpg" alt="">
-                    <div class="portfolio-item-overlay">
-                        <span class="portfolio-item-title">Tienda WLS</span>
-                        <span class="portfolio-item-description">Tienda online, logo y redes sociales.</span>
-                        <span class="portfolio-item-links">
-                            <!-- <a href="#" class="link"><i class="fab fa-github"></i> Ver en GitHub</a> -->
-                            <a href="https://www.tiendawls.com" class="link"><i class="fas fa-link"></i> Visitar web</a>
-                        </span>
+                    <div class="portfolio-item">
+                        <img src="img/portfolio/portfolio-item-img-4.jpg" alt="">
+                        <div class="portfolio-item-overlay">
+                            <span class="portfolio-item-title">Tienda WLS</span>
+                            <span class="portfolio-item-description">Tienda online, logo y redes sociales.</span>
+                            <span class="portfolio-item-links">
+                                <!-- <a href="#" class="link"><i class="fab fa-github"></i> Ver en GitHub</a> -->
+                                <a href="https://www.tiendawls.com" class="link"><i class="fas fa-link"></i> Visitar web</a>
+                            </span>
+                        </div>
                     </div>
+                    
                 </div>
-                
             </div>
         </section>
         <section id="contacto">
-            <h2 class="contact">Contacto</h2>
-            <h3 class="contact">Formulario de contacto? Hagámoslo más personal, podés...</h3>
+            <div class="container">
 
-            <div class="grid">
+                <h2 class="contact">Contacto</h2>
+                <h3 class="contact">Formulario de contacto? Hagámoslo más personal, podés...</h3>
+    
+                <div class="grid">
+    
+                    <div class="card-container">
+                        <a class="card" href="mailto:hola@juandematei.com?subject=Contacto desde la web">
+                            <div class="side">
+                                <i class="fas fa-envelope fa-3x"></i>
+                            </div>
+                            <div class="side back">
+                                <span>Mandarme un correo</span>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="card-container">
+                        <a class="card" href="tel:+541158893809">
+                            <div class="side">
+                                <i class="fas fa-phone fa-3x"></i>
+                            </div>
+                            <div class="side back">
+                                <span>Llamarme</span>
+                            </div>
+                        </a>
+                    </div>
+    
+                    <div class="card-container">
+                        <a class="card" href="https://web.whatsapp.com/send?phone=5491158893809">
+                            <div class="side">
+                                <i class="fab fa-whatsapp fa-3x"></i>
+                            </div>
+                            <div class="side back">
+                                <span>Mandarme un WhatsApp</span>
+                            </div>
+                        </a>
+                    </div>
 
-                <div class="card-container">
-                    <a class="card" href="mailto:hola@juandematei.com?subject=Contacto desde la web">
-                        <div class="side">
-                            <i class="fas fa-envelope fa-3x"></i>
-                        </div>
-                        <div class="side back">
-                            <span>Mandarme un correo</span>
-                        </div>
-                    </a>
                 </div>
-
-                <div class="card-container">
-                    <a class="card" href="tel:+541158893809">
-                        <div class="side">
-                            <i class="fas fa-phone fa-3x"></i>
-                        </div>
-                        <div class="side back">
-                            <span>Llamarme</span>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="card-container">
-                    <a class="card" href="https://web.whatsapp.com/send?phone=5491158893809">
-                        <div class="side">
-                            <i class="fab fa-whatsapp fa-3x"></i>
-                        </div>
-                        <div class="side back">
-                            <span>Mandarme un WhatsApp</span>
-                        </div>
-                    </a>
-                </div>
-
-                <!-- 
-                <a class="contact-item" href="tel:+5491158893809">
-                    <i class="fas fa-phone"></i><span>Llamarme</span>
-                </a>
-
-                <a class="contact-item" href="https://web.whatsapp.com/send?phone=5491158893809">
-                    <i class="fab fa-whatsapp"></i><span>Enviarme un WhatsApp</span>
-                </a> 
-                -->
-
             </div>
-
         </section>
     </main>
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="copyright">
-                    Creado con 
-                    <span class="fa-stack">
-                        <i class="fas fa-heart fa-stack-2x"></i>
-                        <i class="fas fa-code fa-stack-1x fa-inverse"></i>
-                    </span>
-                    por mí.
-                </div>
                 <ul class="social">
                     <a href="https://instagram.com/juandemateiweb" class="social-link"><li class="social-item"><i class="fab fa-instagram"></i></li></a>
                     <a href="https://github.com/juandematei" class="social-link"><li class="social-item"><i class="fab fa-github-alt"></i></li></a>
                     <a href="https://linkedin.com/in/juandematei/" class="social-link"><li class="social-item"><i class="fab fa-linkedin-in"></i></li></a>
                 </ul>
+                <div class="copyright">Creado con <i class="fas fa-code"></i> por mí.</div>
             </div>
         </div>
     </footer>
