@@ -11,74 +11,101 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 300; }
 
-main {
-  margin-bottom: 200px; }
-
 .container {
   margin: 0 auto;
-  padding: 0 1em;
+  padding: 3em 2em;
   width: 100%;
   height: 100%; }
 
-nav {
-  background: rgba(250, 250, 250, 0.8);
-  height: 70px;
-  width: 100%;
-  position: fixed;
-  z-index: 100; }
-  nav .branding {
-    height: 100%; }
-    nav .branding .branding-logo {
-      max-height: 100%; }
-  nav .menu {
-    overflow: hidden;
-    position: relative;
-    height: 100vh;
-    background: #fafafa;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    right: -100vw;
-    transition: all 0.3s ease-in-out; }
-    nav .menu.show {
-      right: -20vw; }
-    nav .menu .nav-item {
-      list-style: none;
-      margin: 2em 1em; }
-    nav .menu .nav-link {
-      text-decoration: none;
-      text-transform: uppercase;
-      color: #212121;
-      font-family: "Montserrat", sans-serif;
-      font-size: 2em;
-      font-weight: 700; }
-  nav .menu-btn {
-    position: absolute;
-    right: 20px;
-    top: 0;
-    line-height: 70px;
-    color: #212121; }
-
 header {
-  background-color: #D5DFEA;
-  background-image: url(../img/juan.png);
-  background-size: 80%;
-  background-position: center bottom;
-  background-repeat: no-repeat;
-  height: 100vh;
-  padding-top: 150px; }
-  header .title-box {
-    background-color: rgba(250, 250, 250, 0.8);
-    padding: 1em;
-    position: relative;
+  min-height: 70px;
+  background: #D5DFEA; }
+  header nav {
+    background: rgba(250, 250, 250, 0.8);
+    height: 70px;
     width: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 30px 80px -15px rgba(0, 0, 0, 0.75);
-    font-family: "Dosis", sans-serif;
-    font-weight: 500;
-    text-transform: uppercase;
-    animation: float 6s ease-in-out infinite; }
+    position: fixed;
+    z-index: 100;
+    padding: 0 1em; }
+    header nav .branding {
+      height: 100%; }
+      header nav .branding .branding-logo {
+        max-height: 100%; }
+    header nav .menu {
+      overflow: hidden;
+      position: relative;
+      height: 100vh;
+      background: #fafafa;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      right: -100vw;
+      transition: all 0.3s ease-in-out; }
+      header nav .menu.show {
+        right: -20vw; }
+      header nav .menu .nav-item {
+        list-style: none;
+        margin: 2em 1em; }
+      header nav .menu .nav-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #212121;
+        font-family: "Montserrat", sans-serif;
+        font-size: 2em;
+        font-weight: 700; }
+    header nav .menu-btn {
+      position: absolute;
+      right: 20px;
+      top: 0;
+      line-height: 70px;
+      color: #212121; }
+
+main {
+  margin-bottom: 200px; }
+  main section {
+    background: #fafafa; }
+    main section h2, main section h3 {
+      font-family: "Dosis", sans-serif;
+      text-align: center;
+      text-transform: uppercase; }
+    main section h2 {
+      background: linear-gradient(-45deg, #009999, #663399);
+      background-clip: unset;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 3em;
+      font-weight: 500;
+      padding-bottom: 0.5em; }
+    main section h3 {
+      font-size: 1.6em;
+      font-weight: 300; }
+    main section#aboutme {
+      background-color: #D5DFEA;
+      background-image: url(../img/juan.png);
+      background-size: 80%;
+      background-position: center bottom;
+      background-repeat: no-repeat;
+      height: 50vh; }
+      main section#aboutme .title-box {
+        background-color: rgba(250, 250, 250, 0.8);
+        padding: 1em;
+        position: relative;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 30px 80px -15px rgba(0, 0, 0, 0.75);
+        font-weight: 500;
+        animation: float 6s ease-in-out infinite; }
+        main section#aboutme .title-box h2 {
+          font-size: 1.8em;
+          text-align: left;
+          -webkit-text-fill-color: #212121; }
+          main section#aboutme .title-box h2 em {
+            -webkit-text-fill-color: #663399;
+            font-style: normal; }
+        main section#aboutme .title-box h3 {
+          font-size: 1em;
+          text-align: left; }
 
 @keyframes float {
   0% {
@@ -88,173 +115,134 @@ header {
     box-shadow: 0px -10px 80px -15px rgba(0, 0, 0, 0.75); }
   100% {
     transform: translateY(-10px); } }
-
-@keyframes float-after {
-  0% {
-    transform: translateY(0px); }
-  50% {
-    transform: translateY(-20px); }
-  100% {
-    transform: translateY(0px); } }
-    header .title-box h1 {
-      font-size: 1.8em; }
-    header .title-box h3 {
-      font-size: 1em; }
-    header .title-box em {
-      color: #663399;
-      font-style: normal; }
-
-section {
-  padding: 80px 0;
-  background: #fafafa; }
-  section#contacto {
-    background: linear-gradient(-45deg, #009999, #663399); }
-  section h2,
-  section h3 {
-    font-family: "Dosis", sans-serif;
-    text-align: center;
-    text-transform: uppercase; }
-    section h2.contact,
-    section h3.contact {
-      background: #fafafa;
-      background-clip: unset;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
-  section h2 {
-    background: linear-gradient(-45deg, #009999, #663399);
-    background-clip: unset;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 3em;
-    font-weight: 500;
-    padding-bottom: 0.5em; }
-  section h3 {
-    font-size: 1.6em;
-    font-weight: 300; }
-
-.portfolio-grid {
-  width: 100%;
-  padding: 40px 20px;
-  display: grid;
-  grid-template-columns: auto;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  justify-content: center; }
-  .portfolio-grid .portfolio-item {
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    cursor: pointer;
-    box-shadow: 0px 10px 40px -15px rgba(0, 0, 0, 0.75); }
-    .portfolio-grid .portfolio-item:hover {
-      box-shadow: 0px 30px 80px -15px rgba(0, 0, 0, 0.75);
-      transition: all 0.3s ease-in-out; }
-    .portfolio-grid .portfolio-item img {
-      max-width: 100%;
-      transform: scale(1.2);
-      transition: all 0.3s ease-in-out; }
-    .portfolio-grid .portfolio-item:hover img {
-      transform: scale(1.1);
-      filter: blur(2px); }
-    .portfolio-grid .portfolio-item .portfolio-item-overlay {
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: center;
-      align-content: stretch;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 100%;
+    main section#portfolio .portfolio-grid {
       width: 100%;
-      padding: 15px;
-      opacity: 0;
-      transition: all 0.3s ease-in-out; }
-      .portfolio-grid .portfolio-item .portfolio-item-overlay:hover {
-        opacity: 1;
-        background: linear-gradient(rgba(33, 33, 33, 0.2), rgba(33, 33, 33, 0.8)); }
-      .portfolio-grid .portfolio-item .portfolio-item-overlay span {
-        color: #fafafa;
-        text-align: center;
-        text-shadow: 0px 2px 15px black; }
-      .portfolio-grid .portfolio-item .portfolio-item-overlay .portfolio-item-title {
-        font-family: "Dosis", sans-serif;
-        font-weight: 500;
-        font-size: 1.2em;
-        text-transform: uppercase; }
-      .portfolio-grid .portfolio-item .portfolio-item-overlay .portfolio-item-description {
-        font-size: 1em; }
-      .portfolio-grid .portfolio-item .portfolio-item-overlay .portfolio-item-links {
-        font-size: 0.8em;
-        margin-top: 20px; }
-        .portfolio-grid .portfolio-item .portfolio-item-overlay .portfolio-item-links a {
-          text-decoration: none;
-          color: #fafafa;
-          margin: 0 6px; }
-
-#contacto .grid {
-  width: 100%;
-  padding: 40px 20px;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-column-gap: 40px;
-  grid-row-gap: 40px;
-  justify-content: center; }
-  #contacto .grid .card-container {
-    cursor: pointer;
-    height: 150px;
-    perspective: 600;
-    position: relative;
-    width: 100%; }
-    #contacto .grid .card-container .card {
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      transform-style: preserve-3d;
-      transition: all 0.3s ease-in-out;
-      border-radius: 10px;
-      background: rgba(250, 250, 250, 0.5);
-      color: #fafafa; }
-      #contacto .grid .card-container .card:hover {
-        transform: rotateX(180deg);
+      display: grid;
+      margin: 2em auto;
+      grid-template-columns: auto;
+      grid-column-gap: 2em;
+      grid-row-gap: 2em;
+      justify-content: center; }
+      main section#portfolio .portfolio-grid .portfolio-item {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        cursor: pointer;
+        box-shadow: 0px 10px 40px -15px rgba(0, 0, 0, 0.75);
+        transition: all 0.3s ease-in-out; }
+        main section#portfolio .portfolio-grid .portfolio-item:hover {
+          box-shadow: 0px 30px 80px -15px rgba(0, 0, 0, 0.75); }
+        main section#portfolio .portfolio-grid .portfolio-item img {
+          max-width: 100%;
+          transform: scale(1.2);
+          transition: all 0.3s ease-in-out; }
+        main section#portfolio .portfolio-grid .portfolio-item:hover img {
+          transform: scale(1.1);
+          filter: blur(2px); }
+        main section#portfolio .portfolio-grid .portfolio-item .portfolio-item-overlay {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-items: center;
+          align-content: stretch;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          padding: 15px;
+          opacity: 0;
+          transition: all 0.3s ease-in-out; }
+          main section#portfolio .portfolio-grid .portfolio-item .portfolio-item-overlay:hover {
+            opacity: 1;
+            background: linear-gradient(rgba(33, 33, 33, 0.2), rgba(33, 33, 33, 0.8)); }
+          main section#portfolio .portfolio-grid .portfolio-item .portfolio-item-overlay span {
+            color: #fafafa;
+            text-align: center;
+            text-shadow: 0px 2px 15px black; }
+          main section#portfolio .portfolio-grid .portfolio-item .portfolio-item-overlay .portfolio-item-title {
+            font-family: "Dosis", sans-serif;
+            font-weight: 500;
+            font-size: 1.2em;
+            text-transform: uppercase; }
+          main section#portfolio .portfolio-grid .portfolio-item .portfolio-item-overlay .portfolio-item-description {
+            font-size: 1em; }
+          main section#portfolio .portfolio-grid .portfolio-item .portfolio-item-overlay .portfolio-item-links {
+            font-size: 0.8em;
+            margin-top: 20px; }
+            main section#portfolio .portfolio-grid .portfolio-item .portfolio-item-overlay .portfolio-item-links a {
+              text-decoration: none;
+              color: #fafafa;
+              margin: 0 6px; }
+    main section#contact {
+      background: linear-gradient(-45deg, #009999, #663399); }
+      main section#contact h2, main section#contact h3 {
         background: #fafafa;
-        color: #212121;
-        font-weight: 700; }
-    #contacto .grid .card-container .card .side {
-      backface-visibility: hidden;
-      height: 100%;
-      position: absolute;
-      overflow: hidden;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: nowrap;
-      justify-content: center;
-      align-items: center;
-      align-content: stretch; }
-    #contacto .grid .card-container .card .back {
-      transform: rotateX(180deg); }
-
-.contact-item {
-  border: 5px solid #fafafa;
-  border-radius: 10px;
-  padding: 1em;
-  color: #fafafa;
-  text-decoration: none;
-  position: relative;
-  perspective: 600; }
-  .contact-item span {
-    font-size: 1.4em;
-    vertical-align: middle;
-    font-weight: 700; }
-  .contact-item i {
-    margin-right: 0.4em;
-    font-size: 2em;
-    vertical-align: middle; }
+        background-clip: unset;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+      main section#contact .grid {
+        width: 100%;
+        margin: 2em auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-column-gap: 2em;
+        grid-row-gap: 2em;
+        justify-content: center; }
+        main section#contact .grid .card-container {
+          cursor: pointer;
+          height: 100px;
+          perspective: 600;
+          position: relative;
+          width: 100%; }
+          main section#contact .grid .card-container .card {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            transform-style: preserve-3d;
+            transition: all 0.3s ease-in-out;
+            border-radius: 10px;
+            background: rgba(250, 250, 250, 0.5);
+            color: #fafafa; }
+            main section#contact .grid .card-container .card:hover {
+              transform: rotateX(180deg);
+              background: #fafafa;
+              color: #212121;
+              font-weight: 700; }
+          main section#contact .grid .card-container .card .side {
+            backface-visibility: hidden;
+            height: 100%;
+            position: absolute;
+            overflow: hidden;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+            align-content: stretch; }
+          main section#contact .grid .card-container .card .back {
+            transform: rotateX(180deg); }
+      main section#contact .contact-item {
+        border: 5px solid #fafafa;
+        border-radius: 10px;
+        padding: 1em;
+        color: #fafafa;
+        text-decoration: none;
+        position: relative;
+        perspective: 600; }
+        main section#contact .contact-item span {
+          font-size: 1.4em;
+          vertical-align: middle;
+          font-weight: 700; }
+        main section#contact .contact-item i {
+          margin-right: 0.4em;
+          font-size: 2em;
+          vertical-align: middle; }
 
 footer {
   color: #fafafa;

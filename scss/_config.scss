@@ -5,35 +5,48 @@
     box-sizing: border-box;
 }
 
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700|Dosis:300,500');
+
+$primary-font: 'Montserrat', sans-serif;
+$secondary-font: 'Dosis', sans-serif;
+
+$light: 300;
+$regular: 300;
+$bold: 500;
+$bolder: 700;
+
 // Colors
-$colors: (
-    primary: #009999,
-    accent:  #663399,
-    white:   #fafafa,
-    black:   #212121
-);
+$colors: (primary: #009999,
+accent: #663399,
+white: #fafafa,
+black: #212121);
 
 @function color($color-name) {
     @return map-get($colors, $color-name)
 };
 
-
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700|Dosis:300,500');
-
-$primary-font:   'Montserrat', sans-serif;
-$secondary-font: 'Dosis', sans-serif;
-
-$light:   300;
-$regular: 300;
-$bold:    500;
-$bolder:  700;
-
 // Mixins
 @mixin shadow {
-    box-shadow: 0px 30px 80px -15px rgba(0,0,0,0.75);
-} 
+    box-shadow: 0px 30px 80px -15px rgba(0, 0, 0, 0.75);
+}
 
 @mixin ease {
     transition: all 0.3s ease-in-out;
+}
+
+// Common elements
+html,
+body {
+    background-color: color(black);
+    color: color(black);
+    font-family: $primary-font;
+    font-weight: $regular;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 3em 2em;
+    width: 100%;
+    height: 100%;
 }
