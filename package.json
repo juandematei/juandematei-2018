@@ -5,6 +5,7 @@
   "main": "index.js",
   "homepage": "https://github.com/juandematei/juandematei-2018",
   "dependencies": {
+    "aos": "^2.3.3",
     "node-sass": "^4.9.3"
   },
   "devDependencies": {},
