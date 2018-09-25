@@ -31,6 +31,9 @@ header {
     padding: 0 1em; }
     header nav .branding {
       height: 100%; }
+      @media only screen and (min-width: 995px) {
+        header nav .branding {
+          float: left; } }
       header nav .branding .branding-logo {
         max-height: 100%; }
     header nav .menu {
@@ -44,11 +47,24 @@ header {
       justify-content: flex-start;
       right: -100vw;
       transition: all 0.3s ease-in-out; }
+      @media only screen and (min-width: 995px) {
+        header nav .menu {
+          height: 70px;
+          flex-direction: row;
+          justify-content: flex-end;
+          background: transparent; } }
       header nav .menu.show {
         right: -20vw; }
+        @media only screen and (min-width: 995px) {
+          header nav .menu.show {
+            right: 0; } }
       header nav .menu .nav-item {
         list-style: none;
         margin: 2em 1em; }
+        @media only screen and (min-width: 995px) {
+          header nav .menu .nav-item {
+            margin: 0 1em;
+            line-height: 70px; } }
       header nav .menu .nav-link {
         text-decoration: none;
         text-transform: uppercase;
@@ -56,12 +72,18 @@ header {
         font-family: "Montserrat", sans-serif;
         font-size: 2em;
         font-weight: 700; }
+        @media only screen and (min-width: 995px) {
+          header nav .menu .nav-link {
+            font-size: 0.9em; } }
     header nav .menu-btn {
       position: absolute;
       right: 20px;
       top: 0;
       line-height: 70px;
       color: #212121; }
+      @media only screen and (min-width: 995px) {
+        header nav .menu-btn {
+          display: none; } }
 
 main {
   margin-bottom: 200px; }
@@ -89,6 +111,12 @@ main {
       background-position: center bottom;
       background-repeat: no-repeat;
       min-height: 70vh; }
+      @media only screen and (min-width: 995px) {
+        main section#aboutme {
+          height: 100vh;
+          background-size: 50%;
+          background-position: center right;
+          padding-bottom: 0; } }
       main section#aboutme .title-box {
         background-color: rgba(250, 250, 250, 0.8);
         padding: 1em;
@@ -98,14 +126,23 @@ main {
         box-shadow: 0px 30px 80px -15px rgba(0, 0, 0, 0.75);
         font-weight: 500;
         animation: float 6s ease-in-out infinite; }
+        @media only screen and (min-width: 995px) {
+          main section#aboutme .title-box {
+            width: 50%; } }
         main section#aboutme .title-box h2 {
           font-size: 1.6em;
           text-align: left;
           -webkit-text-fill-color: #212121;
           padding: 0; }
+          @media only screen and (min-width: 995px) {
+            main section#aboutme .title-box h2 {
+              font-size: 2.4em; } }
         main section#aboutme .title-box h3 {
           font-size: 1em;
           text-align: left; }
+          @media only screen and (min-width: 995px) {
+            main section#aboutme .title-box h3 {
+              font-size: 1.8em; } }
         main section#aboutme .title-box em {
           -webkit-text-fill-color: transparent;
           font-style: normal;
@@ -122,6 +159,10 @@ main {
       main section#aboutme .description {
         margin: 2em 0 14em 0;
         padding: 0 1em; }
+        @media only screen and (min-width: 995px) {
+          main section#aboutme .description {
+            width: 50%;
+            font-size: 1.6em; } }
         main section#aboutme .description p {
           margin-bottom: 1em;
           line-height: 1.4em; }
@@ -138,6 +179,9 @@ main {
       grid-column-gap: 2em;
       grid-row-gap: 2em;
       justify-content: center; }
+      @media only screen and (min-width: 995px) {
+        main section#portfolio .portfolio-grid {
+          grid-template-columns: auto auto auto auto; } }
       main section#portfolio .portfolio-grid .portfolio-item {
         width: 100%;
         position: relative;
@@ -208,6 +252,9 @@ main {
         grid-column-gap: 2em;
         grid-row-gap: 2em;
         justify-content: center; }
+        @media only screen and (min-width: 995px) {
+          main section#contact .grid {
+            grid-template-columns: 30% 30% 30%; } }
         main section#contact .grid .card-container {
           cursor: pointer;
           height: 100px;

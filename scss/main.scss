@@ -21,6 +21,10 @@ header {
         
         .branding {
             height: 100%;
+
+            @media #{$desktop} {
+                float: left;
+            }
             
             .branding-logo {
                 max-height: 100%;
@@ -38,14 +42,30 @@ header {
             justify-content: flex-start;
             right: -100vw;
             @include ease;
+
+            @media #{$desktop} {
+                height: 70px;
+                flex-direction: row;
+                justify-content: flex-end;
+                background: transparent;
+            }
             
             &.show {
                 right: -20vw;
+
+                @media #{$desktop} {
+                    right: 0;
+                }
             }
             
             .nav-item {
                 list-style: none;
                 margin: 2em 1em;
+
+                @media #{$desktop} {
+                    margin: 0 1em;
+                    line-height: 70px;
+                }
             }
             
             .nav-link {
@@ -55,6 +75,10 @@ header {
                 font-family: $primary-font;
                 font-size: 2em;
                 font-weight: $bolder;
+
+                @media #{$desktop} {
+                    font-size: 0.9em;
+                }
             }
         }
         
@@ -64,6 +88,10 @@ header {
             top: 0;
             line-height: 70px;
             color: color(black);
+
+            @media #{$desktop} {
+                display: none;
+            }
         }
     }
 }
@@ -105,6 +133,13 @@ main {
             background-position: center bottom;
             background-repeat: no-repeat;
             min-height: 70vh;
+
+            @media #{$desktop} {
+                height: 100vh;
+                background-size: 50%;
+                background-position: center right;
+                padding-bottom: 0;
+            }
             
             .title-box {
                 background-color: rgba(color(white), 0.8);
@@ -116,17 +151,28 @@ main {
                 font-weight: $bold;
                 animation: float 6s ease-in-out infinite;
 
+                @media #{$desktop} {
+                    width: 50%;
+                }
                 
                 h2 {
                     font-size: 1.6em;
                     text-align: left;
                     -webkit-text-fill-color: color(black);
                     padding: 0;
+
+                    @media #{$desktop} {
+                        font-size: 2.4em;
+                    }
                 }
                 
                 h3 {
                     font-size: 1em;
                     text-align: left;
+
+                    @media #{$desktop} {
+                        font-size: 1.8em;
+                    }
                 }
                 
                 em {
@@ -152,6 +198,11 @@ main {
             .description {
                 margin: 2em 0 14em 0;
                 padding: 0 1em;
+
+                @media #{$desktop} {
+                    width: 50%;
+                    font-size: 1.6em;
+                }
                 
                 p {
                     margin-bottom: 1em;
@@ -178,6 +229,10 @@ main {
                 grid-column-gap: 2em;
                 grid-row-gap: 2em;
                 justify-content: center;
+
+                @media #{$desktop} {
+                    grid-template-columns: auto auto auto auto;
+                }
                 
                 .portfolio-item {
                     width: 100%;
@@ -278,6 +333,10 @@ main {
                 grid-column-gap: 2em;
                 grid-row-gap: 2em;
                 justify-content: center;
+
+                @media #{$desktop} {
+                    grid-template-columns: 30% 30% 30%;
+                }
         
                 .card-container {
                     cursor: pointer;

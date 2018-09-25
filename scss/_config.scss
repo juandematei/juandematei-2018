@@ -50,3 +50,15 @@ body {
     width: 100%;
     height: 100%;
 }
+
+// Media Query breakpoints
+$mobile-screen: 690px;
+$tablet-screen: 995px;
+$desktop-screen: 1440px;
+
+$screen: "only screen";
+$mobile: "only screen and (max-width:#{$mobile-screen})";
+$tablet: "only screen and (min-width:#{$mobile-screen}) and (max-width: #{$tablet-screen})";
+$desktop: "only screen and (min-width:#{$tablet-screen})";
+$landscape: "only screen and (orientation: landscape)";
+$portrait: "only screen and (orientation: portrait)";
