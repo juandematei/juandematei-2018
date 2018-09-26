@@ -140,7 +140,7 @@ main {
         // About me
         &#aboutme {
             background-color: #D5DFEA;
-            background-image: url(../img/juan.png);
+            background-image: url(../img/juan-min.png);
             background-size: 80%;
             background-position: center bottom;
             background-repeat: no-repeat;
@@ -220,22 +220,22 @@ main {
                 @media #{$desktop} {
                     width: 50%;
                     font-size: 1.5rem;
+                    line-height: 3rem;
                 }
 
                 @media #{$tablet} {
                     width: 50%;
                     font-size: 1rem;
+                    line-height: 2.5rem;
                 }
                 
                 p {
                     margin-bottom: 1rem;
-                    line-height: 2rem;
                 }
 
                 li {
                     list-style: none;
                     font-weight: $bolder;
-                    line-height: 2rem;
                 }
             }
         }
@@ -370,10 +370,11 @@ main {
         
                 .card-container {
                     cursor: pointer;
-                    height: 100px;
+                    height: 150px;
                     perspective: 600;
                     position: relative;
                     width: 100%;
+                    padding: 1rem;
         
                     .card {
                         height: 100%;
@@ -391,8 +392,22 @@ main {
                             background: rgba(color(white), 1);
                             color: color(black);
                         }
+
+                        span {
+                            font-size: 1.4rem;
+                            vertical-align: middle;
+                            font-weight: $bolder;
+                        }
+            
+                        @media #{$tablet} {
+                            font-size: 0.8rem;
+                        }
+                        
+                        i {
+                            font-size: 2rem;
+                        }
                     }
-        
+                    
                     .card .side {
                         backface-visibility: hidden;
                         height: 100%;
@@ -414,31 +429,6 @@ main {
                     .card .back {
                         transform: rotateX(180deg);
                     }
-                }
-            }
-            .contact-item {
-                border: 5px solid #fafafa;
-                border-radius: 10px;
-                padding: 1rem;
-                color: color(white);
-                text-decoration: none;
-                position: relative;
-                perspective: 600;
-            
-                span {
-                    font-size: 1.4rem;
-                    vertical-align: middle;
-                    font-weight: $bolder;
-                }
-
-                @media #{$tablet} {
-                    font-size: 0.8rem;
-                }
-            
-                i {
-                    margin-right: 0.4rem;
-                    font-size: 2rem;
-                    vertical-align: middle;
                 }
             }
         }
