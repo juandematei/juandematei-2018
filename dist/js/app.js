@@ -1,5 +1,3 @@
-AOS.init();
-
 // Select DOM elements
 const menuBtn = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
@@ -12,11 +10,13 @@ menuBtn.addEventListener('click', toggleMenu);
 function toggleMenu() {
   if (!showMenu) {
     menu.classList.add('show');
-
+    
     showMenu = true;
   } else {
     menu.classList.remove('show');
-
+    
     showMenu = false;
   }
 }
+
+AOS.init();

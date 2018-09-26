@@ -16,7 +16,7 @@ header {
         width: 100%;
         position: fixed;
         z-index: 100;
-        padding: 0 1em;
+        padding: 0 1rem;
 
         
         .branding {
@@ -48,22 +48,19 @@ header {
                 flex-direction: row;
                 justify-content: flex-end;
                 background: transparent;
+                right: 0;
             }
             
             &.show {
                 right: -20vw;
-
-                @media #{$desktop} {
-                    right: 0;
-                }
             }
             
             .nav-item {
                 list-style: none;
-                margin: 2em 1em;
+                margin: 2rem 1rem;
 
                 @media #{$desktop} {
-                    margin: 0 1em;
+                    margin: 0 1rem;
                     line-height: 70px;
                 }
             }
@@ -73,11 +70,11 @@ header {
                 text-transform: uppercase;
                 color: color(black);
                 font-family: $primary-font;
-                font-size: 2em;
+                font-size: 2rem;
                 font-weight: $bolder;
 
                 @media #{$desktop} {
-                    font-size: 0.9em;
+                    font-size: 1rem;
                 }
             }
         }
@@ -87,7 +84,6 @@ header {
             right: 20px;
             top: 0;
             line-height: 70px;
-            color: color(black);
 
             @media #{$desktop} {
                 display: none;
@@ -115,14 +111,30 @@ main {
             background-clip: unset;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            font-size: 3em;
+            font-size: 3rem;
             font-weight: $bold;
-            padding-bottom: 0.5em;
+            padding-bottom: 0.5rem;
+
+            @media #{$desktop} {
+                font-size: 5rem;
+            }
+
+            @media #{$tablet} {
+                font-size: 3.5rem;
+            }
         }
         
         h3 {
-            font-size: 1.6em;
+            font-size: 1.5rem;
             font-weight: $light;
+
+            @media #{$desktop} {
+                font-size: 2.5rem;
+            }
+
+            @media #{$tablet} {
+                font-size: 2rem;
+            }
         }
             
         // About me
@@ -137,13 +149,13 @@ main {
             @media #{$desktop} {
                 height: 100vh;
                 background-size: 50%;
-                background-position: center right;
+                background-position: right bottom;
                 padding-bottom: 0;
             }
             
             .title-box {
                 background-color: rgba(color(white), 0.8);
-                padding: 1em;
+                padding: 1rem;
                 position: relative;
                 width: 100%;
                 border-radius: 10px;
@@ -154,24 +166,28 @@ main {
                 @media #{$desktop} {
                     width: 50%;
                 }
+
+                @media #{$tablet} {
+                    width: 80%;
+                }
                 
                 h2 {
-                    font-size: 1.6em;
+                    font-size: 1.2rem;
                     text-align: left;
                     -webkit-text-fill-color: color(black);
                     padding: 0;
 
                     @media #{$desktop} {
-                        font-size: 2.4em;
+                        font-size: 2.5rem;
                     }
                 }
                 
                 h3 {
-                    font-size: 1em;
+                    font-size: 1rem;
                     text-align: left;
 
                     @media #{$desktop} {
-                        font-size: 1.8em;
+                        font-size: 1.8rem;
                     }
                 }
                 
@@ -196,24 +212,30 @@ main {
             }
             
             .description {
-                margin: 2em 0 14em 0;
-                padding: 0 1em;
+                margin-top: 2rem;
+                margin-bottom: 14rem;
+                padding: 0 1rem;
+                font-size: 0.8rem;
 
                 @media #{$desktop} {
                     width: 50%;
-                    font-size: 1.6em;
+                    font-size: 1.5rem;
+                }
+
+                @media #{$tablet} {
+                    width: 50%;
+                    font-size: 1rem;
                 }
                 
                 p {
-                    margin-bottom: 1em;
-                    line-height: 1.4em;
+                    margin-bottom: 1rem;
+                    line-height: 2rem;
                 }
 
                 li {
                     list-style: none;
-                    font-size: 0.8em;
                     font-weight: $bolder;
-                    line-height: 2em;
+                    line-height: 2rem;
                 }
             }
         }
@@ -224,14 +246,18 @@ main {
             .portfolio-grid {
                 width: 100%;
                 display: grid;
-                margin: 2em auto;
+                margin: 2rem auto;
                 grid-template-columns: auto;
-                grid-column-gap: 2em;
-                grid-row-gap: 2em;
+                grid-column-gap: 2rem;
+                grid-row-gap: 2rem;
                 justify-content: center;
 
                 @media #{$desktop} {
                     grid-template-columns: auto auto auto auto;
+                }
+
+                @media #{$tablet} {
+                    grid-template-columns: auto auto;
                 }
                 
                 .portfolio-item {
@@ -272,7 +298,7 @@ main {
                         right: 0;
                         height: 100%;
                         width: 100%;
-                        padding: 15px;
+                        padding: 1rem;
                         opacity: 0;
                         @include ease;
                         
@@ -291,17 +317,17 @@ main {
                         .portfolio-item-title {
                             font-family: $secondary-font;
                             font-weight: $bold;
-                            font-size: 1.2em;
+                            font-size: 1.5rem;
                             text-transform: uppercase;
                         }
                         
                         .portfolio-item-description {
-                            font-size: 1em;
+                            font-size: 1rem;
                         }
                         
                         .portfolio-item-links {
-                            font-size: 0.8em;
-                            margin-top: 20px;
+                            font-size: 1rem;
+                            margin-top: 1rem;
                             
                             a {
                                 text-decoration: none;
@@ -327,15 +353,19 @@ main {
 
             .grid {
                 width: 100%;
-                margin: 2em auto;
+                margin: 2rem auto;
                 display: grid;
                 grid-template-columns: 100%;
-                grid-column-gap: 2em;
-                grid-row-gap: 2em;
+                grid-column-gap: 2rem;
+                grid-row-gap: 2rem;
                 justify-content: center;
 
                 @media #{$desktop} {
                     grid-template-columns: 30% 30% 30%;
+                }
+
+                @media #{$tablet} {
+                    grid-template-columns: 50%;
                 }
         
                 .card-container {
@@ -351,16 +381,15 @@ main {
                         position: absolute;
                         transform-style: preserve-3d;
                         @include ease;
-                        //transition-delay: 0.1s;
                         border-radius: 10px;
                         background: rgba(color(white), 0.5);
                         color: color(white);
+                        font-weight: $bolder;
         
                         &:hover {
                             transform: rotateX(180deg);
                             background: rgba(color(white), 1);
                             color: color(black);
-                            font-weight: $bolder;
                         }
                     }
         
@@ -377,8 +406,8 @@ main {
                         align-items: center;
                         align-content: stretch;
 
-                        span {
-                            margin-top: 0.5em;
+                        i {
+                            margin-bottom: 1rem;
                         }
                     }
         
@@ -390,21 +419,25 @@ main {
             .contact-item {
                 border: 5px solid #fafafa;
                 border-radius: 10px;
-                padding: 1em;
+                padding: 1rem;
                 color: color(white);
                 text-decoration: none;
                 position: relative;
                 perspective: 600;
             
                 span {
-                    font-size: 1.4em;
+                    font-size: 1.4rem;
                     vertical-align: middle;
                     font-weight: $bolder;
                 }
+
+                @media #{$tablet} {
+                    font-size: 0.8rem;
+                }
             
                 i {
-                    margin-right: 0.4em;
-                    font-size: 2em;
+                    margin-right: 0.4rem;
+                    font-size: 2rem;
                     vertical-align: middle;
                 }
             }
@@ -414,19 +447,20 @@ main {
 
 // Footer 
 footer {
+    background-color: color(black);
     color: color(white);
     position: fixed;
     bottom: 0;
     z-index: -1;
     width: 100%;
+    min-height: 200px;
 
     .footer-content {
         text-align: center;
-        padding: 2em;
+        padding: 2rem;
 
         .copyright {
-            padding: 2em auto;
-            //background: pink;
+            padding: 2rem auto;
             i {
                 color: #c62828;
             }
@@ -434,8 +468,7 @@ footer {
 
         .social {
             list-style: none;
-            margin-bottom: 2em;
-            //background: #c62828;
+            margin: 2rem 0;
 
             .social-link {
                 text-decoration: none;
@@ -454,7 +487,7 @@ footer {
                 border-radius: 50%;
                 line-height: 50px;
                 text-align: center;
-                font-size: 24px;
+                font-size: 1.5rem;
                 @include ease;
 
                 &:hover {

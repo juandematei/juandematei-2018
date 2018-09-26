@@ -6,14 +6,14 @@
 
 html,
 body {
-  background-color: #212121;
+  background-color: #D5DFEA;
   color: #212121;
   font-family: "Montserrat", sans-serif;
   font-weight: 300; }
 
 .container {
   margin: 0 auto;
-  padding: 3em 2em;
+  padding: 3rem 2rem;
   width: 100%;
   height: 100%; }
 
@@ -28,10 +28,10 @@ header {
     width: 100%;
     position: fixed;
     z-index: 100;
-    padding: 0 1em; }
+    padding: 0 1rem; }
     header nav .branding {
       height: 100%; }
-      @media only screen and (min-width: 995px) {
+      @media only screen and (min-width: 768px) {
         header nav .branding {
           float: left; } }
       header nav .branding .branding-logo {
@@ -47,41 +47,38 @@ header {
       justify-content: flex-start;
       right: -100vw;
       transition: all 0.3s ease-in-out; }
-      @media only screen and (min-width: 995px) {
+      @media only screen and (min-width: 768px) {
         header nav .menu {
           height: 70px;
           flex-direction: row;
           justify-content: flex-end;
-          background: transparent; } }
+          background: transparent;
+          right: 0; } }
       header nav .menu.show {
         right: -20vw; }
-        @media only screen and (min-width: 995px) {
-          header nav .menu.show {
-            right: 0; } }
       header nav .menu .nav-item {
         list-style: none;
-        margin: 2em 1em; }
-        @media only screen and (min-width: 995px) {
+        margin: 2rem 1rem; }
+        @media only screen and (min-width: 768px) {
           header nav .menu .nav-item {
-            margin: 0 1em;
+            margin: 0 1rem;
             line-height: 70px; } }
       header nav .menu .nav-link {
         text-decoration: none;
         text-transform: uppercase;
         color: #212121;
         font-family: "Montserrat", sans-serif;
-        font-size: 2em;
+        font-size: 2rem;
         font-weight: 700; }
-        @media only screen and (min-width: 995px) {
+        @media only screen and (min-width: 768px) {
           header nav .menu .nav-link {
-            font-size: 0.9em; } }
+            font-size: 1rem; } }
     header nav .menu-btn {
       position: absolute;
       right: 20px;
       top: 0;
-      line-height: 70px;
-      color: #212121; }
-      @media only screen and (min-width: 995px) {
+      line-height: 70px; }
+      @media only screen and (min-width: 768px) {
         header nav .menu-btn {
           display: none; } }
 
@@ -98,12 +95,24 @@ main {
       background-clip: unset;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-size: 3em;
+      font-size: 3rem;
       font-weight: 500;
-      padding-bottom: 0.5em; }
+      padding-bottom: 0.5rem; }
+      @media only screen and (min-width: 768px) {
+        main section h2 {
+          font-size: 5rem; } }
+      @media only screen and (min-width: 426px) and (max-width: 768px) {
+        main section h2 {
+          font-size: 3.5rem; } }
     main section h3 {
-      font-size: 1.6em;
+      font-size: 1.5rem;
       font-weight: 300; }
+      @media only screen and (min-width: 768px) {
+        main section h3 {
+          font-size: 2.5rem; } }
+      @media only screen and (min-width: 426px) and (max-width: 768px) {
+        main section h3 {
+          font-size: 2rem; } }
     main section#aboutme {
       background-color: #D5DFEA;
       background-image: url(../img/juan.png);
@@ -111,38 +120,41 @@ main {
       background-position: center bottom;
       background-repeat: no-repeat;
       min-height: 70vh; }
-      @media only screen and (min-width: 995px) {
+      @media only screen and (min-width: 768px) {
         main section#aboutme {
           height: 100vh;
           background-size: 50%;
-          background-position: center right;
+          background-position: right bottom;
           padding-bottom: 0; } }
       main section#aboutme .title-box {
         background-color: rgba(250, 250, 250, 0.8);
-        padding: 1em;
+        padding: 1rem;
         position: relative;
         width: 100%;
         border-radius: 10px;
         box-shadow: 0px 30px 80px -15px rgba(0, 0, 0, 0.75);
         font-weight: 500;
         animation: float 6s ease-in-out infinite; }
-        @media only screen and (min-width: 995px) {
+        @media only screen and (min-width: 768px) {
           main section#aboutme .title-box {
             width: 50%; } }
+        @media only screen and (min-width: 426px) and (max-width: 768px) {
+          main section#aboutme .title-box {
+            width: 80%; } }
         main section#aboutme .title-box h2 {
-          font-size: 1.6em;
+          font-size: 1.2rem;
           text-align: left;
           -webkit-text-fill-color: #212121;
           padding: 0; }
-          @media only screen and (min-width: 995px) {
+          @media only screen and (min-width: 768px) {
             main section#aboutme .title-box h2 {
-              font-size: 2.4em; } }
+              font-size: 2.5rem; } }
         main section#aboutme .title-box h3 {
-          font-size: 1em;
+          font-size: 1rem;
           text-align: left; }
-          @media only screen and (min-width: 995px) {
+          @media only screen and (min-width: 768px) {
             main section#aboutme .title-box h3 {
-              font-size: 1.8em; } }
+              font-size: 1.8rem; } }
         main section#aboutme .title-box em {
           -webkit-text-fill-color: transparent;
           font-style: normal;
@@ -157,31 +169,39 @@ main {
   100% {
     transform: translateY(-5px); } }
       main section#aboutme .description {
-        margin: 2em 0 14em 0;
-        padding: 0 1em; }
-        @media only screen and (min-width: 995px) {
+        margin-top: 2rem;
+        margin-bottom: 14rem;
+        padding: 0 1rem;
+        font-size: 0.8rem; }
+        @media only screen and (min-width: 768px) {
           main section#aboutme .description {
             width: 50%;
-            font-size: 1.6em; } }
+            font-size: 1.5rem; } }
+        @media only screen and (min-width: 426px) and (max-width: 768px) {
+          main section#aboutme .description {
+            width: 50%;
+            font-size: 1rem; } }
         main section#aboutme .description p {
-          margin-bottom: 1em;
-          line-height: 1.4em; }
+          margin-bottom: 1rem;
+          line-height: 2rem; }
         main section#aboutme .description li {
           list-style: none;
-          font-size: 0.8em;
           font-weight: 700;
-          line-height: 2em; }
+          line-height: 2rem; }
     main section#portfolio .portfolio-grid {
       width: 100%;
       display: grid;
-      margin: 2em auto;
+      margin: 2rem auto;
       grid-template-columns: auto;
-      grid-column-gap: 2em;
-      grid-row-gap: 2em;
+      grid-column-gap: 2rem;
+      grid-row-gap: 2rem;
       justify-content: center; }
-      @media only screen and (min-width: 995px) {
+      @media only screen and (min-width: 768px) {
         main section#portfolio .portfolio-grid {
           grid-template-columns: auto auto auto auto; } }
+      @media only screen and (min-width: 426px) and (max-width: 768px) {
+        main section#portfolio .portfolio-grid {
+          grid-template-columns: auto auto; } }
       main section#portfolio .portfolio-grid .portfolio-item {
         width: 100%;
         position: relative;
@@ -213,7 +233,7 @@ main {
           right: 0;
           height: 100%;
           width: 100%;
-          padding: 15px;
+          padding: 1rem;
           opacity: 0;
           transition: all 0.3s ease-in-out; }
           main section#portfolio .portfolio-grid .portfolio-item .portfolio-item-overlay:hover {
@@ -226,13 +246,13 @@ main {
           main section#portfolio .portfolio-grid .portfolio-item .portfolio-item-overlay .portfolio-item-title {
             font-family: "Dosis", sans-serif;
             font-weight: 500;
-            font-size: 1.2em;
+            font-size: 1.5rem;
             text-transform: uppercase; }
           main section#portfolio .portfolio-grid .portfolio-item .portfolio-item-overlay .portfolio-item-description {
-            font-size: 1em; }
+            font-size: 1rem; }
           main section#portfolio .portfolio-grid .portfolio-item .portfolio-item-overlay .portfolio-item-links {
-            font-size: 0.8em;
-            margin-top: 20px; }
+            font-size: 1rem;
+            margin-top: 1rem; }
             main section#portfolio .portfolio-grid .portfolio-item .portfolio-item-overlay .portfolio-item-links a {
               text-decoration: none;
               color: #fafafa;
@@ -246,15 +266,18 @@ main {
         -webkit-text-fill-color: transparent; }
       main section#contact .grid {
         width: 100%;
-        margin: 2em auto;
+        margin: 2rem auto;
         display: grid;
         grid-template-columns: 100%;
-        grid-column-gap: 2em;
-        grid-row-gap: 2em;
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
         justify-content: center; }
-        @media only screen and (min-width: 995px) {
+        @media only screen and (min-width: 768px) {
           main section#contact .grid {
             grid-template-columns: 30% 30% 30%; } }
+        @media only screen and (min-width: 426px) and (max-width: 768px) {
+          main section#contact .grid {
+            grid-template-columns: 50%; } }
         main section#contact .grid .card-container {
           cursor: pointer;
           height: 100px;
@@ -269,12 +292,12 @@ main {
             transition: all 0.3s ease-in-out;
             border-radius: 10px;
             background: rgba(250, 250, 250, 0.5);
-            color: #fafafa; }
+            color: #fafafa;
+            font-weight: 700; }
             main section#contact .grid .card-container .card:hover {
               transform: rotateX(180deg);
               background: #fafafa;
-              color: #212121;
-              font-weight: 700; }
+              color: #212121; }
           main section#contact .grid .card-container .card .side {
             backface-visibility: hidden;
             height: 100%;
@@ -287,43 +310,48 @@ main {
             justify-content: center;
             align-items: center;
             align-content: stretch; }
-            main section#contact .grid .card-container .card .side span {
-              margin-top: 0.5em; }
+            main section#contact .grid .card-container .card .side i {
+              margin-bottom: 1rem; }
           main section#contact .grid .card-container .card .back {
             transform: rotateX(180deg); }
       main section#contact .contact-item {
         border: 5px solid #fafafa;
         border-radius: 10px;
-        padding: 1em;
+        padding: 1rem;
         color: #fafafa;
         text-decoration: none;
         position: relative;
         perspective: 600; }
         main section#contact .contact-item span {
-          font-size: 1.4em;
+          font-size: 1.4rem;
           vertical-align: middle;
           font-weight: 700; }
+        @media only screen and (min-width: 426px) and (max-width: 768px) {
+          main section#contact .contact-item {
+            font-size: 0.8rem; } }
         main section#contact .contact-item i {
-          margin-right: 0.4em;
-          font-size: 2em;
+          margin-right: 0.4rem;
+          font-size: 2rem;
           vertical-align: middle; }
 
 footer {
+  background-color: #212121;
   color: #fafafa;
   position: fixed;
   bottom: 0;
   z-index: -1;
-  width: 100%; }
+  width: 100%;
+  min-height: 200px; }
   footer .footer-content {
     text-align: center;
-    padding: 2em; }
+    padding: 2rem; }
     footer .footer-content .copyright {
-      padding: 2em auto; }
+      padding: 2rem auto; }
       footer .footer-content .copyright i {
         color: #c62828; }
     footer .footer-content .social {
       list-style: none;
-      margin-bottom: 2em; }
+      margin: 2rem 0; }
       footer .footer-content .social .social-link {
         text-decoration: none;
         color: #212121; }
@@ -337,7 +365,7 @@ footer {
         border-radius: 50%;
         line-height: 50px;
         text-align: center;
-        font-size: 24px;
+        font-size: 1.5rem;
         transition: all 0.3s ease-in-out; }
         footer .footer-content .social .social-item:hover {
           background: #fafafa; }
