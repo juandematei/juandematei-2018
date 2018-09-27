@@ -283,8 +283,7 @@ main {
           height: 150px;
           perspective: 600;
           position: relative;
-          width: 100%;
-          padding: 1rem; }
+          width: 100%; }
           main section#contact .grid .card-container .card {
             height: 100%;
             width: 100%;
@@ -307,7 +306,7 @@ main {
               main section#contact .grid .card-container .card {
                 font-size: 0.8rem; } }
             main section#contact .grid .card-container .card i {
-              font-size: 2rem; }
+              font-size: 3rem; }
           main section#contact .grid .card-container .card .side {
             backface-visibility: hidden;
             height: 100%;
