@@ -16,21 +16,21 @@ header {
         width: 100%;
         position: fixed;
         z-index: 100;
-        
+
         .branding {
             height: 100%;
             padding: 1rem;
 
             @media #{$desktop} {
                 float: left;
-                padding-left: 4rem; 
+                padding-left: 4rem;
             }
-            
+
             .branding-logo {
                 max-height: 100%;
             }
         }
-        
+
         .menu {
             overflow: hidden;
             position: relative;
@@ -51,11 +51,11 @@ header {
                 right: 0;
                 padding-right: 4rem;
             }
-            
+
             &.show {
                 right: -20vw;
             }
-            
+
             .nav-item {
                 list-style: none;
                 margin: 2rem 1rem;
@@ -65,7 +65,7 @@ header {
                     line-height: 70px;
                 }
             }
-            
+
             .nav-link {
                 text-decoration: none;
                 text-transform: uppercase;
@@ -79,7 +79,7 @@ header {
                 }
             }
         }
-        
+
         .menu-btn {
             position: absolute;
             right: 20px;
@@ -106,7 +106,8 @@ main {
             padding: 6rem 4rem;
         }
 
-        h2, h3 {
+        h2,
+        h3 {
             font-family: $secondary-font;
             text-align: center;
             text-transform: uppercase;
@@ -129,7 +130,7 @@ main {
                 font-size: 3.5rem;
             }
         }
-        
+
         h3 {
             font-size: 1.5rem;
             font-weight: $light;
@@ -143,7 +144,7 @@ main {
                 font-size: 2rem;
             }
         }
-            
+
         // About me
         &#aboutme {
             background-color: #D5DFEA;
@@ -158,7 +159,7 @@ main {
                 background-size: 50%;
                 background-position: right bottom;
             }
-            
+
             .title-box {
                 background-color: rgba(color(white), 0.8);
                 padding: 1rem;
@@ -176,7 +177,7 @@ main {
                 @media #{$tablet} {
                     width: 80%;
                 }
-                
+
                 h2 {
                     font-size: 1.2rem;
                     text-align: left;
@@ -187,7 +188,7 @@ main {
                         font-size: 2.5rem;
                     }
                 }
-                
+
                 h3 {
                     font-size: 1rem;
                     text-align: left;
@@ -197,7 +198,7 @@ main {
                         font-size: 1.8rem;
                     }
                 }
-                
+
                 em {
                     -webkit-text-fill-color: transparent;
                     font-style: normal;
@@ -208,16 +209,18 @@ main {
                     0% {
                         transform: translateY(-5px)
                     }
+
                     50% {
                         transform: translateY(0px);
                         box-shadow: 0px -10px 60px -15px rgba(0, 0, 0, 0.75);
                     }
+
                     100% {
                         transform: translateY(-5px)
                     }
                 }
             }
-            
+
             .description {
                 padding: 2rem 1rem;
                 font-size: 0.8rem;
@@ -234,7 +237,7 @@ main {
                     font-size: 1rem;
                     line-height: 2.5rem;
                 }
-                
+
                 p {
                     margin-bottom: 1rem;
                 }
@@ -245,7 +248,7 @@ main {
                 }
             }
         }
-        
+
         // Portfolio
         &#portfolio {
 
@@ -265,7 +268,7 @@ main {
                 @media #{$tablet} {
                     grid-template-columns: auto auto;
                 }
-                
+
                 .portfolio-item {
                     width: 100%;
                     position: relative;
@@ -274,22 +277,22 @@ main {
                     cursor: pointer;
                     box-shadow: 0px 10px 40px -15px rgba(0, 0, 0, 0.75);
                     @include ease;
-                    
+
                     &:hover {
                         @include shadow;
                     }
-                    
+
                     img {
                         max-width: 100%;
                         transform: scale(1.2);
                         @include ease;
                     }
-                    
+
                     &:hover img {
                         transform: scale(1.1);
                         filter: blur(2px);
                     }
-                    
+
                     .portfolio-item-overlay {
                         display: flex;
                         flex-direction: column;
@@ -307,34 +310,34 @@ main {
                         padding: 1rem;
                         opacity: 0;
                         @include ease;
-                        
+
                         &:hover {
                             opacity: 1;
-                            background: linear-gradient(rgba(color(black), 0.2),rgba(color(black), 0.8));
+                            background: linear-gradient(rgba(color(black), 0.2), rgba(color(black), 0.8));
                         }
-                        
-                        
+
+
                         span {
                             color: color(white);
                             text-align: center;
                             text-shadow: 0px 2px 15px rgba(0, 0, 0, 1);
                         }
-                        
+
                         .portfolio-item-title {
                             font-family: $secondary-font;
                             font-weight: $bold;
                             font-size: 1.5rem;
                             text-transform: uppercase;
                         }
-                        
+
                         .portfolio-item-description {
                             font-size: 1rem;
                         }
-                        
+
                         .portfolio-item-links {
                             font-size: 1rem;
                             margin-top: 1rem;
-                            
+
                             a {
                                 text-decoration: none;
                                 color: color(white);
@@ -343,14 +346,15 @@ main {
                         }
                     }
                 }
-            } 
+            }
         }
 
         // Contact
         &#contact {
             background: linear-gradient(-45deg, color(primary), color(accent));
 
-            h2, h3 {
+            h2,
+            h3 {
                 background: color(white);
                 background-clip: unset;
                 -webkit-background-clip: text;
@@ -373,7 +377,7 @@ main {
                 @media #{$tablet} {
                     grid-template-columns: 50%;
                 }
-        
+
                 .card-container {
                     cursor: pointer;
                     min-height: 100px;
@@ -383,7 +387,7 @@ main {
                     @media #{$desktop} {
                         min-height: 150px;
                     }
-        
+
                     .card {
                         height: 100%;
                         width: 100%;
@@ -394,8 +398,9 @@ main {
                         background: rgba(color(white), 0.5);
                         color: color(white);
                         font-weight: $bolder;
-        
-                        &:hover, &:focus {
+
+                        &:hover,
+                        &:focus {
                             transform: rotateX(180deg);
                             background: rgba(color(white), 1);
                             color: color(black);
@@ -406,16 +411,16 @@ main {
                             vertical-align: middle;
                             font-weight: $bolder;
                         }
-            
+
                         @media #{$tablet} {
                             font-size: 0.8rem;
                         }
-                        
+
                         i {
                             font-size: 3rem;
                         }
                     }
-                    
+
                     .card .side {
                         backface-visibility: hidden;
                         height: 100%;
@@ -434,7 +439,7 @@ main {
                             margin-bottom: 1rem;
                         }
                     }
-        
+
                     .card .back {
                         transform: rotateX(180deg);
                     }
@@ -460,6 +465,7 @@ footer {
 
         .copyright {
             padding: 2rem auto;
+
             i {
                 color: #c62828;
             }
