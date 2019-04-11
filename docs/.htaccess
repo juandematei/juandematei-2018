@@ -1,4 +1,3 @@
-#Force www:
 RewriteEngine on
 RewriteCond %{HTTP_HOST} ^juandematei.com [NC]
 RewriteRule ^(.*)$ http://www.juandematei.com/$1 [L,R=301,NC]
