@@ -10,7 +10,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive --output-style compressed"
+    "sass": "node-sass -w scss/ -o docs/css/ --recursive --output-style compressed"
   },
   "repository": {
     "type": "git",
