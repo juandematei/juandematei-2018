@@ -96,10 +96,10 @@ header {
 // Main
 main {
   margin-bottom: 200px;
+  background: linear-gradient(-45deg, color(primary), color(accent));
 
   // Sections
   section {
-    background: color(white);
     padding: 4rem 2rem;
 
     @media #{$desktop} {
@@ -147,21 +147,13 @@ main {
 
     // About me
     &#aboutme {
-      background-color: #d5dfea;
-      background-image: url(../img/juan-min.png);
-      background-size: 80%;
-      background-position: center bottom;
-      background-repeat: no-repeat;
       height: calc(100vh - 70px);
       padding-top: 2rem;
-
-      @media #{$desktop} {
-        background-size: 50%;
-        background-position: right bottom;
-      }
+      color: color(white);
 
       .title-box {
         background-color: rgba(color(white), 0.8);
+        color: color(black);
         padding: 1rem;
         position: relative;
         width: 100%;
@@ -251,6 +243,7 @@ main {
 
     // Portfolio
     &#portfolio {
+      background-color: color(white);
       .portfolio-grid {
         width: 100%;
         display: grid;
@@ -349,8 +342,6 @@ main {
 
     // Contact
     &#contact {
-      background: linear-gradient(-45deg, color(primary), color(accent));
-
       h2,
       h3 {
         background: color(white);
@@ -358,89 +349,20 @@ main {
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
-
-      .grid {
+      a {
+        display: inline-block;
         width: 100%;
-        margin: 2rem auto;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-column-gap: 2rem;
-        grid-row-gap: 2rem;
-        justify-content: center;
+        font-size: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: color(white);
 
         @media #{$desktop} {
-          grid-template-columns: 30% 30% 30%;
+          font-size: 2rem;
         }
 
         @media #{$tablet} {
-          grid-template-columns: 50%;
-        }
-
-        .card-container {
-          cursor: pointer;
-          min-height: 100px;
-          position: relative;
-          width: 100%;
-
-          @media #{$desktop} {
-            min-height: 150px;
-          }
-
-          .card {
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            transform-style: preserve-3d;
-            @include ease;
-            border-radius: 10px;
-            background: rgba(color(white), 0.5);
-            color: color(white);
-            font-weight: $bolder;
-
-            &:hover,
-            &:focus {
-              transform: rotateX(180deg);
-              background: rgba(color(white), 1);
-              color: color(black);
-            }
-
-            span {
-              font-size: 1.2rem;
-              vertical-align: middle;
-              font-weight: $bolder;
-            }
-
-            @media #{$tablet} {
-              font-size: 0.8rem;
-            }
-
-            i {
-              font-size: 3rem;
-            }
-          }
-
-          .card .side {
-            backface-visibility: hidden;
-            height: 100%;
-            position: absolute;
-            overflow: hidden;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-            justify-content: center;
-            align-items: center;
-            align-content: stretch;
-            padding: 1rem;
-
-            i {
-              margin-bottom: 1rem;
-            }
-          }
-
-          .card .back {
-            transform: rotateX(180deg);
-          }
+          font-size: 1.3rem;
         }
       }
     }
